@@ -18,47 +18,72 @@ var result = double(2);
 console.log(result); // 4
 ```
 
-### Exercise
+## Exercise
 
 * Complete the function in exercise.js so that it halves the input
 * Try calling the function more than once with some different numbers
 
 > Remember to use the return keyword to get a value out of the function
 
-### Expected result
+## Expected result
 
 ```text
 6
 ```
 
-### Exercise 2
+## Exercise 2
 
 * Complete the function in exercise2.js so that it triples the input
 
-### Expected result
+## Expected result
 
 ```text
 24
 ```
 
-{% exercise %}
-Define a variable `x` equal to 10.
+{% tabs %}
+{% tab title="First Tab" %}
+Hello
+{% endtab %}
 
-{% initial %}
-var x =
+{% tab title="Second Tab" %}
+Bye
+{% endtab %}
+{% endtabs %}
 
-{% solution %}
-var x = 10;
+{% api-method method="get" host="" path="" %}
+{% api-method-summary %}
+posts
+{% endapi-method-summary %}
 
-{% validation %}
-assert(x == 10);
+{% api-method-description %}
+Get posts
+{% endapi-method-description %}
 
-{% context %}
-// This is context code available everywhere
-// The user will be able to evaluate `exposedVar`
-var exposedVar = 3;
-// ... or call `exposedFunction`
-function exposedFunction {
-    return 3;
-}
-{% endexercise %}
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="sorted" type="string" required=false %}
+in order
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% hint style="info" %}
+Watch out!
+{% endhint %}
+
